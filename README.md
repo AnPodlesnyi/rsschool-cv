@@ -1,1 +1,2 @@
-[cv](https://AnPodlesnyi.github.io/rsschool-cv/cv)
+rsschool-cv
+https://AnPodlesnyi.github.io/rsschool-cv/
