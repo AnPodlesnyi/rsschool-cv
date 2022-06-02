@@ -5,6 +5,7 @@
 * __Email:__ an.podlesnyi@gmail.com
 * __LinkedIn:__ https://www.linkedin.com/in/andriy-podliesniy-51729521b/
 * __Discord:__ Andrii Podlesnyi (@AnPodlesnyi)
+* __Faceboock:__ https://www.facebook.com/777podlesnaj
 
 ## About 
 Hello! My name is Andrey and I'm 22. My goal is to become a junior developer, so now I'm actively learning all the necessary skills for further work in the company.
