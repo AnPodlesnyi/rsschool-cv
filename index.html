@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,17 +19,92 @@
             <div class="header__container">
                 <nav class="header-menu">
                     <ul class="header-menu__list">
-                        <a href="#about" class="header-menu__link"><img src="assets/logo.png" alt="Logo"
-                                class="logo"></a>
+                        <li class="header-menu__item">
+                            <a href="#about" class="header-menu__link"><img src="assets/logo.png" alt="Logo"
+                                    class="logo"></a>
+                        </li>
                         <li class="header-menu__item"><a href="#about" class="header-menu__link">About</a></li>
                         <li class="header-menu__item"><a href="#projects" class="header-menu__link">Projects</a></li>
                         <li class="header-menu__item"><a href="#skills" class="header-menu__link">Skills</a></li>
                         <li class="header-menu__item"><a href="#contacts" class="header-menu__link">Contacts</a></li>
                     </ul>
                 </nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#about">About</a></li>
+                        <li><a class="menu__item" href="#projects">Projects</a></li>
+                        <li><a class="menu__item" href="#skills">Skills</a></li>
+                        <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <div class="container__flex">
+                <div class="main-left">
+                    <div class="main-left__photo">
+                        <img src="assets/apodlesni.png" alt="photo" class="main__img">
+                    </div>
+                    <section class="contacts">
+                        <h2 class="contacts_head">Contacts</h2>
+                        <div class="separator separator__yellow"></div>
+                        <div class="contacts__place">
+                            <h3 class="name__place">Name:</h3>
+                            <h4 class="name__place__separator">Andrii Podlesnyi</h4>
+                            <h3 class="name__place">Address:</h3>
+                            <h4 class="name__place__separator">Kyiv, Ukraine</h4>
+                            <h3 class="name__place">Phone number:</h3>
+                            <h4 class="name__place__separator"><a class="phone_place" href=”tel:+380682092515”>+38 (068)
+                                    209-25-15</a></h4>
+                            <h3 class="name__place">Email:</h3>
+                            <h4 class="name__place__separator"><a class="email__place"
+                                    href="mailto:an.podlesnyi@gmail.com">an.podlesnyi@gmail.com</a></h4>
+                        </div>
+                        <h2 class="contacts_head">Skills</h2>
+                        <div class="separator separator__yellow"></div>
+                        <ul class="skil__list">
+                            <li class="skil__items html_skil">
+                                <h4>HTML</h4>
+                            </li>
+                            <li class="skil__items css_skil">
+                                <h4>CSS</h4>
+                            </li>
+                            <li class="skil__items sass_skil">
+                                <h4>SASS</h4>
+                            </li>
+                            <li class="skil__items js_skil">
+                                <h4>JavaScript</h4>
+                            </li>
+                            <li class="skil__items figma_skil">
+                                <h4>Figma</h4>
+                            </li>
+                            <li class="skil__items git_skil">
+                                <h4>Git</h4>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="main-center">
+                    <div class="main__header">
+                        <h1 class="main__name">Andrii Podlesnyi</h1>
+                        <h3 class="main__name__footer">Frontend developer</h3>
+                    </div>
+                    <div class="main__quote">
+                        <h3 class="quote__text">
+                            `If you can't find something on the Internet, just translate your request into English and
+                            you will find what you were looking for with 99% accuracy =)`
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
