@@ -383,6 +383,7 @@ padding-top: 5px;
 /* ----------------------------- CODE EXAMPLE */
 .maine__code{
   display: block;
+  padding-bottom: 5px;
 }
 .pre{
   display: flex;
