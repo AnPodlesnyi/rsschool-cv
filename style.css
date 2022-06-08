@@ -99,10 +99,12 @@ select {
 .header-menu__item{
     margin: 15px;
 }
+
 .header-menu__link{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+    padding: 3px;
 }
 .nav-menu__item logo{
     position: absolute;
@@ -117,6 +119,7 @@ select {
   opacity: 0;
 }
 .menu__btn {
+  display: flex;
   display: none; 
   align-items: center; 
   position: fixed;
@@ -125,7 +128,7 @@ select {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -150,6 +153,7 @@ select {
   display: block;
   position: fixed;
   visibility: hidden;
+  z-index: 1;
   top: 0;
   left: -100%;
   width: 300px;
@@ -239,7 +243,9 @@ margin-bottom: 15px;
   color: var(--head-color-h3);
   word-break: break-all
 }
-
+.skills{
+  margin-left: 30px;
+}
 .skil__list{
   display: flex;
   flex-direction: column;
@@ -251,7 +257,7 @@ margin-bottom: 15px;
   background-repeat: no-repeat;
   background-size: 35px;
   background-position: left center;
-  min-height: 30px;
+  min-height: 34px;
   padding-left: 40px;
 }
 .html_skil{
@@ -365,7 +371,6 @@ td{
   display: block;
   width: 100%;
   max-height: 215px;
-  min-width: 215px;
 }
 .projects__text{
   text-align: left;
@@ -373,6 +378,63 @@ td{
 }
 .projects-text__desc{
 padding-top: 5px;
+}
+
+/* ----------------------------- CODE EXAMPLE */
+.maine__code{
+  display: block;
+}
+.pre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 29, 44);
+  color: rgb(218, 128, 143);
+  margin: 15px;
+  padding: auto;
+}
+.code__text{
+  text-align: left;
+}
+.pre__green{
+  color: rgb(5, 180, 5);
+}
+.pre__yellow{
+  color: rgb(185, 185, 8);
+}
+.pre__orange{
+  color: orange;
+}
+.pre__violet{
+  color: rgb(167, 89, 184);
+}
+.pre__white{
+  color: white;
+}
+.pre__grey{
+  color: grey;
+}
+
+/* --------------------------------- footer */
+
+.container__footer{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: var(--secondary-color);
+  height: 80px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+.git__svg{
+  height: 50px;
+}
+.rss__svg{
+  height: 50px;
+}
+.footer__year{
+margin: auto;
 }
 
 @media (max-width: 830px) {
@@ -421,6 +483,12 @@ padding-top: 5px;
     display:inline-block;
   }
 } 
+@media (max-width: 470px) {
+  .code__text{
+    font-size: 9px;
+  }
+} 
+
 @media (max-width: 350px) {
 .main__header{
   padding-left: 15px;

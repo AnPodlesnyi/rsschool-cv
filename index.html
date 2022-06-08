@@ -35,7 +35,7 @@
                         <span></span>
                     </label>
                     <ul class="menu__box">
-                        <li><a class="menu__item" onclick="return false" href="#about">About</a></li>
+                        <li><a class="menu__item" href="#about">About</a></li>
                         <li><a class="menu__item" href="#projects">Projects</a></li>
                         <li><a class="menu__item" href="#skills">Skills</a></li>
                         <li><a class="menu__item" href="#contacts">Contacts</a></li>
@@ -51,7 +51,7 @@
                     <div class="main-left__photo">
                         <img src="assets/apodlesni.png" alt="photo" class="main__img">
                     </div>
-                    <section class="contacts" id="skills">
+                    <section class="contacts" id="contacts">
                         <h2 class="contacts_head">Contacts</h2>
                         <div class="separator separator__yellow"></div>
                         <div class="contacts__place">
@@ -60,12 +60,15 @@
                             <h3 class="name__place">Address:</h3>
                             <h4 class="name__place__separator">Kyiv, Ukraine</h4>
                             <h3 class="name__place">Phone number:</h3>
-                            <h4 class="name__place__separator"><a class="phone_place" href=”tel:+380682092515”>+38 (068)
+                            <h4 class="name__place__separator"><a href=”tel:+380682092515” class="phone_place"
+                                    target="_blank">+38 (068)
                                     209-25-15</a></h4>
                             <h3 class="name__place">Email:</h3>
                             <h4 class="name__place__separator"><a class="email__place"
                                     href="mailto:an.podlesnyi@gmail.com">an.podlesnyi@gmail.com</a></h4>
                         </div>
+                    </section>
+                    <section class="skills" id="skills">
                         <h2 class="contacts_head">Skills</h2>
                         <div class="separator separator__yellow"></div>
                         <ul class="skil__list">
@@ -108,7 +111,7 @@
                                         <h3>English</h3>
                                     </td>
                                     <td>
-                                        <p>A2</p>
+                                        <p>A2-B1</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -254,11 +257,46 @@
                                 </div>
                             </div>
                         </section>
+                        <div class="maine__code">
+                            <h3 class="about-head__text">Code example</h3>
+                            <div class="separator separator__black"></div>
+                            <pre class="pre">
+                                <code class="code__text">
+<span>const</span> <span class="pre__green">getTypeOfSentence</span> = <span class="pre__yellow">(</span><span class='pre__orange'>sentence</span><span class="pre__yellow">)</span> => <span class="pre__orange">{</span>
+    <span>const</span><span class="pre__violet"> lastChar</span> = <span class="pre__orange">sentence</span><span class="pre__white">.</span><span class="pre__green">slice</span>(-<span class="pre__violet">1</span>)<span class="pre__white">;</span>
+
+    <span>return</span> (<span class="pre__violet">lastChar</span> === <span class="pre__yellow">'?'</span>) ? <span class="pre__yellow">'question'</span> : <span class="pre__yellow">'normal'</span><span class="pre__white">;</span>
+<span class="pre__orange">}</span><span class="pre__white">;</span>
+
+<span class="pre__green">getTypeOfSentence</span><span class="pre__orange">(</span><span class="pre__yellow">'Hodor'</span><span class="pre__orange">)</span><span class="pre__white">;</span>  <span class="pre__grey">// normal</span>
+<span class="pre__green">getTypeOfSentence</span><span class="pre__orange">(</span><span class="pre__yellow">'Hodor?'</span><span class="pre__orange">)</span><span class="pre__white">;</span>  <span class="pre__grey">// question</span>
+                                </code>
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="container">
+            <div class="container__footer">
+                <div class="footer__github">
+                    <a href="https://github.com/AnPodlesnyi" target="_blank">
+                        <img src="assets/footer__svg/github.svg" alt="git__svg" class="git__svg">
+                    </a>
+                </div>
+                <div class="footer__year">
+                    <h3>2022</h3>
+                </div>
+                <div class="footer__rss">
+                    <a href="https://rs.school/js/" target="_blank">
+                        <img src="assets/footer__svg/rs_school_js.svg" alt="rss__svg" class="rss__svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
